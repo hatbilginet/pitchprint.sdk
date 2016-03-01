@@ -4,7 +4,7 @@
 	<head>
 		
 		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-		<script src="//dta8vnpq1ae34.cloudfront.net/v8/js/pprint.js"></script>
+		<script src="//dta8vnpq1ae34.cloudfront.net/app/js/pprint.js"></script>
 
 		<script type="text/javascript">
 
@@ -12,7 +12,7 @@
 			var rscBase = '//s3.amazonaws.com/pitchprint.rsc/';
 			var langCode = 'en';
 			var apiKey = 'f80b84b4eb5cc81a140cb90f52e824f6';
-			var appUrl = 'https://pitchprint.net/app/';
+			var appApiUrl = 'https://pitchprint.net/api/front/';
 			var designId = 'ab73e4cc5b80b05facfca35cca40d318';
 			var lang, designer, mode = 'new', userId = 'guest', projectSource, previews, numPages, projectId, designerShown;
 
@@ -33,7 +33,7 @@
 			function initEditor() {
 				designer = new W2P.designer({
 					apiKey: apiKey,
-					globalUrlPrefix: appUrl,
+					globalUrlPrefix: appApiUrl,
 					parentDiv: '#pp_inline_div',
 					mode: mode,
 					lang: lang,
