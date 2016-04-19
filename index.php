@@ -3,13 +3,13 @@
 	<title>PitchPrint Sample SDK</title>
 	<head>
 		
-		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-		<script src="//dta8vnpq1ae34.cloudfront.net/app/js/pprint.js"></script>
+		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="https://dta8vnpq1ae34.cloudfront.net/app/js/pprint.js"></script>
 
 		<script type="text/javascript">
 
-			var rscCdn = '//dta8vnpq1ae34.cloudfront.net/';
-			var rscBase = '//s3.amazonaws.com/pitchprint.rsc/';
+			var rscCdn = 'https://dta8vnpq1ae34.cloudfront.net/';
+			var rscBase = 'https://s3.amazonaws.com/pitchprint.rsc/';
 			var langCode = 'en';
 			var apiKey = 'f80b84b4eb5cc81a140cb90f52e824f6';
 			var appApiUrl = 'https://pitchprint.net/api/front/';
@@ -109,7 +109,7 @@
 		</script>
 	</head>
 	<body>
-		<div id="pp_inline_div" style="width:1200px; height: 0; margin: 0 auto"></div>
+		<div id="pp_inline_div" style="width:1200px; height: 0; margin: 0 auto; position: relative; overflow: hidden;"></div>
 		<div id="pp_loader_div"><img src="//dta8vnpq1ae34.cloudfront.net/images/loaders/anim-ring.svg" ></div>
 		<button id="launch_btn" onclick="showDesigner();" >Launch Designer</button>
 		<div id="pp_preview_div"> </div>
